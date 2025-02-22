@@ -1,0 +1,272 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Clean, modern font */
+  background-color: #f0f4f9; /* Light background to create contrast */
+  color: #2c3e50; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #ecf3fc; /* Soft blue background for the app */
+}
+
+/* Input field styling */
+input {
+  display: block;
+  margin: 15px 0;
+  padding: 12px;
+  width: 100%;
+  border: 2px solid #d1d9e6;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f7f9fc; /* Slight background color for inputs */
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db; /* Focus border color with a nice blue */
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  padding: 12px 25px;
+  background-color: #3498db; /* Vivid blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2); /* Soft shadow */
+}
+
+button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3); /* Enhanced shadow */
+}
+
+button:active {
+  background-color: #1f618d;
+  box-shadow: none;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #2980b9, #2ecc71); /* Gradient for the navbar */
+  color: white;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #f1c40f; /* A bright yellow on hover */
+  text-decoration: underline;
+}
+
+/* Onboarding Container */
+.onboarding-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More noticeable shadow */
+  font-family: 'Poppins', sans-serif; /* Ensures consistent font style */
+}
+
+/* Headings */
+.onboarding-container h2, h3 {
+  text-align: center;
+  color: #34495e; /* Darker heading color */
+  margin-bottom: 20px; /* Add more space below the headings */
+  font-weight: 600;
+}
+
+/* Form Styles */
+.onboarding-container form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.onboarding-container label {
+  margin: 12px 0;
+  font-weight: 600;
+  color: #2c3e50; /* Darker text for form labels */
+}
+
+.onboarding-container input[type="time"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d9e6;
+  font-size: 16px;
+  background-color: #f7f9fc;
+  transition: border-color 0.3s ease;
+}
+
+.onboarding-container input[type="time"]:focus {
+  border-color: #2ecc71; /* Green border on focus */
+  outline: none;
+}
+
+/* Enhanced Button Styles */
+.onboarding-container button {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #2ecc71; /* Vibrant green */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 17px; /* Consistent button size */
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(46, 204, 113, 0.2); /* Soft green shadow */
+}
+
+.onboarding-container button:hover {
+  background-color: #27ae60;
+  box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3); /* Darker green shadow */
+}
+
+/* Common Habits Container */
+.common-habits-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px; /* Add more space above common habits */
+}
+
+/* Habit Icon Styles */
+.habit-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  padding: 18px;
+  border: 2px solid #dfe6e9; /* Lighter border */
+  border-radius: 12px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.habit-icon:hover {
+  background-color: #dfe6e9; /* Slight grey on hover */
+  transform: scale(1.05); /* Slight scale effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Font Size */
+.habit-icon span {
+  font-size: 42px; /* Larger icon */
+  color: #2ecc71; /* Bright green for the icons */
+}
+
+.habit-icon p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: #2c3e50; /* Darker text color */
+}
+
+/* Selected Habit Icon */
+.habit-icon.selected {
+  background-color: #ecf0f1; /* Light background for selected habits */
+  border-color: #3498db; /* Blue border for selected habits */
+  box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
+}
+
+.habit-icon.selected span {
+  color: #2980b9; /* Change icon color for selected habits */
+}
+
+/* Animations for selected icon */
+.habit-icon.selected {
+  animation: pop 0.2s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* AdminDashboard.css */
+.admin-dashboard {
+  padding: 20px;
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+}
+
+.admin-dashboard .section {
+  margin-bottom: 30px;
+}
+
+.admin-dashboard input {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.admin-dashboard button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.admin-dashboard ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.admin-dashboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-dashboard li button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.admin-dashboard li button:hover {
+  background-color: darkred;
+}
