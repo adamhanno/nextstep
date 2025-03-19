@@ -1,3 +1,14 @@
+# Backend
+
+1. cd nextstep-backend
+2. node server.js
+
+# Frontend
+1. cd nextstep-tracker
+2. npm install
+3. npm start
+
+# More details 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
