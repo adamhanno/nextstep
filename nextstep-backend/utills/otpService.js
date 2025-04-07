@@ -17,6 +17,7 @@ async function sendOTP(email, otp) {
         tls: {
             rejectUnauthorized: false,
         }
+       
     });
 
     const mailOptions = {
