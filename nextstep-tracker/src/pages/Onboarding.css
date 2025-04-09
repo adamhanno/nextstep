@@ -1,0 +1,187 @@
+
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.onboarding-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.onboarding-form h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.onboarding-form label {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+  color: #555;
+}
+
+.onboarding-form input {
+  width: 94%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.onboarding-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease-in-out;
+}
+
+.onboarding-form button:hover {
+  background-color: #0056b3;
+}
+
+
+.habit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 700px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.habit-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.habit-card:hover {
+  transform: scale(1.05);
+}
+
+.habit-card.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.habit-icon {
+  font-size: 30px;
+}
+
+.checkmark {
+  font-size: 20px;
+  color: #28a745;
+  display: block;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .onboarding-container {
+      padding: 30px;
+  }
+
+  .onboarding-form {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .onboarding-form h2 {
+      font-size: 22px;
+  }
+
+  .onboarding-form input {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .onboarding-form button {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .habit-list {
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 10px;
+  }
+
+  .habit-card {
+      padding: 12px;
+      font-size: 14px;
+  }
+
+  .habit-icon {
+      font-size: 25px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .onboarding-container {
+      padding: 30px;
+  }
+
+  .onboarding-form {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .onboarding-form h2 {
+      font-size: 20px;
+  }
+
+  .onboarding-form input {
+      font-size: 12px;
+      padding: 7px;
+  }
+
+  .onboarding-form button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .habit-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+      gap: 8px;
+  }
+
+  .habit-card {
+      padding: 10px;
+      font-size: 12px;
+  }
+
+  .habit-icon {
+      font-size: 20px;
+  }
+}
